@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Go out with me?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="valentine.css">
+</head>
+<body>
+<div class="hearts" id="hearts" aria-hidden="true"></div>
+<main class="phone">
+  <div class="bars" id="bars"></div>
+  <button class="back" id="back" hidden>‹ back</button>
+
+  <section class="step is-active" id="s-ask" data-step="0">
+    <div class="mascot"><span>🧸💕</span></div>
+    <h1>Will you go out with me?</h1>
+    <p class="sub">There is only one right answer.</p>
+    <div class="row">
+      <button class="btn" id="yes">Yes!</button>
+      <button class="btn ghost" id="no">No</button>
+    </div> شو ما لي راسين؟ هذا بولينور، هذا من لي راسين بتاعه، عنده 2 راسين. هاذي 1 و 5 كارت. لي راسين داب بولينور.
+  </section>
+
+  <section class="step" id="s-when" data-step="1" inert>
+    <div class="mascot"><span>💖</span></div>
+    <h1>Yay! When are you free?</h1>
+    <div class="grid g3" id="days"></div>
+    <p class="lbl">and around...</p>
+    <div class="grid g2" id="times"></div>
+  </section>
+
+  <section class="step" id="s-where" data-step="2" inert>
+    <div class="mascot"><span>🐻</span></div>
+    <h1>And where are we going?</h1>
+    <div class="grid g2" data-key="where"></div>
+  </section>
+
+  <section class="step" id="s-bring" data-step="3" inert>
+    <div class="mascot"><span>🎁</span></div>
+    <h1>And what should I bring?</h1>
+    <div class="grid g2" data-key="bring"></div>
+  </section>
+
+  <section class="step" id="s-then" data-step="4" inert>
+    <div class="mascot"><span>🌙</span></div>
+    <h1>And then?</h1>
+    <div class="grid g2" data-key="then"></div>
+  </section>
+
+  <section class="step" id="s-ticket" data-step="5" inert>
+    <h1>It's a date!</h1>
+    <div class="ticket">
+      <div class="stub"><div>💌<br><small>ADMIT TWO</small></div></div>
+      <div class="info" id="ticket"></div>
+    </div>
+    <p class="count">Starts in <b id="count"></b></p>
+    <div class="row">
+      <button class="btn" id="add">Add to calendar</button>
+      <button class="btn ghost" id="share">Share</button>
+    </div>
+  </section>
+
+  <section class="step" id="s-cal" data-step="6" inert>
+    <div class="cal">
+      <p class="lbl">Adding to your calendar</p>
+      <h2 id="month"></h2>
+      <div class="days" id="cal"></div>
+    </div>
+    <p id="final" style="font-size:13px"></p>
+    <button class="btn" id="see">See you there</button>
+  </section>
+</main>
+
+<script src="valentine.js"></script>
+</body>
+</html>
